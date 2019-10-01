@@ -1,8 +1,12 @@
 package polinema.ac.id.starterchapter05;
 
 import androidx.appcompat.app.AppCompatActivity;
+import polinema.ac.id.starterchapter05.activities.DinamicActivity;
+import polinema.ac.id.starterchapter05.activities.StaticActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Telephony;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,9 +18,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void handlerClickStaticFragment(View view) {
+        Intent intent = new Intent(this, StaticActivity.class);
+        startActivity(intent);
     }
 
     public void handlerClickDynamicFragment(View view) {
+        Intent intent = new Intent(this, DinamicActivity.class);
+        startActivity(intent);
     }
 
     public void handlerClickPraktikumFragment(View view) {
